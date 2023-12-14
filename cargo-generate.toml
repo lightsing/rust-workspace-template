@@ -1,0 +1,7 @@
+[template]
+
+[conditional.'crate_type == "lib"']
+ignore = [ "{{project-name}}/src/main.rs"]
+
+[conditional.'crate_type == "bin"']
+ignore = [ "{{project-name}}/src/lib.rs"]
